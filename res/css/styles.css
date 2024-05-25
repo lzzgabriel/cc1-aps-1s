@@ -1,5 +1,6 @@
 :root {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 body {
@@ -8,30 +9,41 @@ body {
 }
 
 header {
+    height: 70px;
+    padding: 15px;
+    display: flex;
     justify-content: space-between;
     background: darkolivegreen;
     color: white;
 }
 
+header h1 {
+    font-size: x-large;
+}
+
 nav {
-    position: fixed;
-    background: blueviolet;
-    height: 100vh;
+    position: absolute;
+    background: rgb(133, 123, 82);
     width: 200px;
-    left: 0;
     display: flex;
     flex-direction: column;
+    min-height: calc(100vh);
+    overflow: hidden;
 }
 
 nav a {
     width: 100%;
     color: white;
-    padding: 15px 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 0;
+    text-decoration: none;
 }
 
 nav a:hover {
-    transition: 150ms ease-in;
-    background: rgb(173, 88, 252);
+    transition: 70ms ease-in;
+    background: rgb(158, 146, 96);
 }
 
 main {
@@ -39,6 +51,11 @@ main {
 }
 
 footer {
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
     background: slategray;
+}
+
+footer a {
+    text-decoration: dashed;
 }
