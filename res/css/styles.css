@@ -1,6 +1,5 @@
 :root {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
 
 body {
@@ -8,54 +7,66 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+img {
+    object-fit: cover;
+}
+
 header {
     height: 70px;
     padding: 15px;
     display: flex;
-    justify-content: space-between;
     background: darkolivegreen;
     color: white;
 }
 
+header img {
+    margin-left: 10px;
+}
+
 header h1 {
+    margin-left: 15px;
     font-size: x-large;
 }
 
 nav {
-    position: absolute;
     background: rgb(133, 123, 82);
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    min-height: calc(100vh);
     overflow: hidden;
 }
 
 nav a {
     width: 100%;
     color: white;
-    padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-right: 0;
-    text-decoration: none;
+}
+
+nav a.selected {
+    background: rgb(145, 132, 89);
 }
 
 nav a:hover {
     transition: 70ms ease-in;
-    background: rgb(158, 146, 96);
-}
-
-main {
-    min-height: 100vh;
+    background: rgb(155, 144, 102);
 }
 
 footer {
     display: flex;
     justify-content: center;
-    background: slategray;
+    align-items: center;
+    background: rgb(57, 68, 38);
 }
 
 footer a {
-    text-decoration: dashed;
+    color: white !important;
+    text-decoration: none;
+}
+
+footer img {
+    border-left: 1px solid white;
+    margin-left: 25px;
+    padding-left: 25px;
 }
