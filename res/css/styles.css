@@ -85,7 +85,8 @@ footer img {
 }
 
 .img-tecnica {
-    height: 250px;
+    height: 275px;
+    width: 100%;
 }
 
 @media screen and (min-width: 576px) {
