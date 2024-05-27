@@ -7,38 +7,91 @@ body {
     margin: 0;
 }
 
+main {
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    object-fit: cover;
+}
+
 header {
-    justify-content: space-between;
+    height: 70px;
+    padding: 15px;
+    display: flex;
     background: darkolivegreen;
     color: white;
 }
 
+header img {
+    margin-left: 10px;
+}
+
+header h1 {
+    margin-left: 15px;
+    font-size: x-large;
+}
+
 nav {
-    position: fixed;
-    background: blueviolet;
-    height: 100vh;
-    width: 200px;
-    left: 0;
-    display: flex;
-    flex-direction: column;
+    background: rgb(133, 123, 82);
+    overflow: hidden;
 }
 
 nav a {
     width: 100%;
     color: white;
-    padding: 15px 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav a.selected {
+    background: rgb(145, 132, 89);
 }
 
 nav a:hover {
-    transition: 150ms ease-in;
-    background: rgb(173, 88, 252);
-}
-
-main {
-    min-height: 100vh;
+    transition: 70ms ease-in;
+    background: rgb(155, 144, 102);
 }
 
 footer {
-    justify-content: space-between;
-    background: slategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(57, 68, 38);
+}
+
+footer a {
+    color: white !important;
+    text-decoration: none;
+}
+
+footer img {
+    border-left: 1px solid white;
+    margin-left: 25px;
+    padding-left: 25px;
+}
+
+.attribution {
+    font-size: x-small;
+}
+
+.min-h-main {
+    min-height: calc(100vh - 86px - 41px - 45px);
+}
+
+.img-tecnica {
+    height: 275px;
+    width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+    .img-tecnica {
+        height: unset;
+        width: 100%;
+    }
 }
