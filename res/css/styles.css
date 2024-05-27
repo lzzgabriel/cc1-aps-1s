@@ -7,6 +7,11 @@ body {
     margin: 0;
 }
 
+main {
+    max-width: 100vw;
+    overflow: hidden;
+}
+
 a {
     text-decoration: none;
 }
@@ -73,4 +78,8 @@ footer img {
 
 .attribution {
     font-size: x-small;
+}
+
+.min-h-main {
+    min-height: calc(100vh - 86px - 41px - 45px);
 }
