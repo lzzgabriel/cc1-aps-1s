@@ -83,3 +83,14 @@ footer img {
 .min-h-main {
     min-height: calc(100vh - 86px - 41px - 45px);
 }
+
+.img-tecnica {
+    height: 250px;
+}
+
+@media screen and (min-width: 576px) {
+    .img-tecnica {
+        height: unset;
+        width: 100%;
+    }
+}
