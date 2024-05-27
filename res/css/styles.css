@@ -5,6 +5,7 @@
 body {
     padding: 0;
     margin: 0;
+    background-color: wheat;
 }
 
 main {
@@ -82,6 +83,28 @@ footer img {
 
 .min-h-main {
     min-height: calc(100vh - 86px - 41px - 45px);
+}
+
+.img-index {
+    height: 325px;
+}
+
+@media screen and (min-width: 576px) {
+    .img-index {
+        height: 540px;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .img-index {
+        height: 700px;
+    }
+}
+
+@media screen and (min-width: 945px) {
+    .img-index {
+        height: 800px;
+    }
 }
 
 .img-tecnica {
